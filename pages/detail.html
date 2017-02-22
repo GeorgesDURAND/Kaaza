@@ -1,0 +1,71 @@
+<div class="container">
+
+    <div class="row">
+        <!-- basket image -->
+        <div class="col-md-6 col-sm-12 col-xs-12 fixed-pos">
+            <div style="width: 555px;">
+                <img alt={{detailBasket.name}} itemprop="image" class="img-responsive" ng-src="{{detailBasket.photo.original}}">
+            </div>
+        </div>
+
+        <!-- right -->
+        <div class="col-md-6 col-md-offset-6 col-sm-12 col-xs-12 bloc-reseller bloc-reseller">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="product-info">{{detailBasket.name}}</div>
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-4">
+                            <div class="product-ref"> {{detailBasket.reference}} </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-3 col-md-2 brand-logo">
+                    <a href="/items"> </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 reseller-count">
+                    {{detailBasket.reseller_count}} Boutiques
+                </div>
+                <div class="col-xs-6 text-right">
+                </div>
+            </div>
+
+            <div class="list-group">
+                <div ng-repeat="reseller in detailBasket.reseller">
+
+                    <a target="_blank" rel="nofollow" href={{reseller.url}} class="list-group-item">
+                        <div class="list-group-item-text">
+                            <div class="row vertical-align">
+
+                                <div class="col-xs-6 col-sm-3"> <img class="reseller-photo" src="assets/img/resellers/{{reseller.name}}.png" alt={{reseller.name}}></div>
+                                <div class="col-xs-6 col-sm-5 text-right text">
+                                    <h5> {{reseller.price_eur}}€ </h5>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-4 text-center">
+                                    <div class="btn btn-default btn-block" >
+                                        Acheter
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row no-col-padding">
+                                <div class="col-xs-12 col-sm-7">
+                                    <p><i class="icon-ok-circled icon-success"></i> <strong>{{reseller.name}}</strong> </p>
+                                </div>
+                                <div class="col-xs-12 col-sm-5">
+                                    <p class="text-muted text-right">{{reseller.country}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
