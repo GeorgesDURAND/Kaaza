@@ -24,9 +24,19 @@ body {
   background-color: #333;
 }
 
+.nav.nav-center {
+    margin:0;
+    float:none;
+}
+
+.navbar-inner{
+    text-align:center;
+}
+
 .input-search {
     padding-top: 42px;
 }
+
 
 .trends-title {
     padding-top: 2px;
