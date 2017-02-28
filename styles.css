@@ -37,6 +37,12 @@ body {
     padding-top: 42px;
 }
 
+.center-search {
+    margin: auto;
+    margin-top: -25px;
+    padding-bottom: 20px;
+}
+
 
 .trends-title {
     padding-top: 2px;
@@ -46,11 +52,6 @@ body {
 
 .img-trending {
     height: 35px;
-}
-
-.blok-basket {
-    margin-top: 25px;
-    height: 330px;
 }
 
 .blok-basket:hover {
@@ -67,6 +68,10 @@ body {
     text-align: center;
     font-weight: 700;
     color: black;
+}
+
+.blok-basket {
+    margin-top: 25px;
 }
 
 @media (min-width:1024px) {
